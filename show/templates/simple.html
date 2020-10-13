@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    {% for v in value %}
+    <h1>{{ v }}</h1>
+    {% endfor %}
+
+    {% for re in result %}
+    <img src="/static/images/{{ re.pic1 }}" class="img-responsive">
+    <img src="/static/images/{{ re.pic2 }}" class="img-responsive">
+    {% endfor  %}
+    {% endblock content %}
+</body>
+</html>
